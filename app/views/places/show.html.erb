@@ -20,6 +20,10 @@
         <div class="col-md-4 col-sm-6">
           <h4 class="fw-bold"><%= post.title %></h4>
           <p class="fw-lighter"><%= post.posted_on %></p>
+          <% if post.uploaded_image.attached? %>
+            <img src="<%= url_for(post.uploaded_image) %>" class="img-fluid">
+          <% else %>
+          <% end %>
           <p><%= post.description %></p>
         </div>
       <% end %>

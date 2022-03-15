@@ -3,7 +3,6 @@
 <div class="m-2 mt-4">
 
   <%= form_with url: "/sessions" do |form| %>
-    
     <p>
         <%= form.label "email" %>
         <%= form.text_field "email"%>
@@ -17,7 +16,6 @@
     <p>
         <%= form.submit "Login", class: "btn btn-primary" %>
     </p>
-
   <% end %>
 
 </div>
